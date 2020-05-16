@@ -1,0 +1,6 @@
+<h1>TWO WAY DATA BINDING (ngModel)</h1>
+<p>[(ngModel)]="persona.nombre"</p>
+<p>Nombre en el Controlador: {{ persona.nombre }}</p>
+<input type="text" placeholder="Introducir nombre"  [(ngModel)]="persona.nombre"/>
+<p>Lo que hacemos con ngModel es recoger el valor del input. El nombre de la persona se actualiza en el controlador y de nuevo se vuelve a renderizar en la vista, ésta vez actualizado. Ese es el concepto del two way data binding! :)</p>
+<hr>
