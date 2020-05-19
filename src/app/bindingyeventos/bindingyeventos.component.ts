@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+const TAG = '[BindingyeventosComponent] ';
+
 @Component({
   selector: 'app-bindingyeventos',
   template: `
@@ -61,7 +63,7 @@ clickEvent(ev){
   }
 
   ngOnInit(): void {
-    console.log("evento ngOnInit");
+    console.log(TAG, "Iniciando");
 
   }
 

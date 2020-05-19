@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+const TAG = '[EventFilteringComponent] ';
+
+
 @Component({
   selector: 'app-event-filtering',
   template: `
@@ -47,7 +50,7 @@ export class EventFilteringComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log("Iniciando el compoente eventFilterting");
+    console.log(TAG, "Iniciando");
   }
 
 }
