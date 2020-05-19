@@ -1,1 +1,20 @@
 <app-bindingyeventos></app-bindingyeventos>
+<app-event-filtering></app-event-filtering>
+
+<!-- DATA BINDING -->
+<app-twowaydatabinding></app-twowaydatabinding>
+
+<!-- DECORADORES INPUT -->
+<!-- Sirven para pasar propiedades de los padres a los hijos -->
+<app-decorador-input></app-decorador-input>
+
+
+<!-- DECORADORES OUTPUT-->
+<!-- 
+    Sirven para pasar propiedades de los hijos a los padres
+    Vamos a mandar el mensaje al componente padre que es app
+-->
+
+<app-decorador-output (eventoPersonalizado)="getMensaje($event)"></app-decorador-output>
+<h2>{{ info }}</h2>
+
