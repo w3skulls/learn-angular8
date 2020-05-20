@@ -1,0 +1,9 @@
+<h2>Directiva: *ngFor</h2>
+
+<h5>Listado de cursos</h5>
+<ul>
+    <li *ngFor="let item of cursos">
+        <span>{{ item.titulo }} </span>
+        <span> | {{ item.duracion }} horas</span>
+    </li>
+</ul>
