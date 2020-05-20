@@ -1,0 +1,13 @@
+<h2>Directiva: *ngSwitchCase</h2>
+<br>
+
+<p>En un switch evalúamos por una condición y luego usamos los case para hacer lo que queramos.</p>
+<p>Vamos a mostrar los cursos que contienen como temática "nodejs"</p>
+<div class="row">
+    <ul>
+        <li *ngFor="let item of cursos" [ngSwitch]="item.tematica">
+            <p *ngSwitchCase="'nodejs'" class="text-success">curso: 0{{item.id}} {{item.titulo}} | {{item.duracion}}horas</p>
+            <div *ngSwitchDefault class="text-danger"><p>No hay registro [default]</p></div>
+        </li>
+    </ul>
+</div>
