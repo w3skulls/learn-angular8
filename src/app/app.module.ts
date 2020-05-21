@@ -7,15 +7,20 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { NgSwitchcaseComponent } from './ng-switchcase/ng-switchcase.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
+import { NgCustomComponent } from './ng-custom/ng-custom.component';
+import { CambiarColorDirective } from './directivas/cambiar-color.directive';
 
 @NgModule({
   declarations: [
+    //Componentes, Directivas & Pipes.
     AppComponent,
     NgIfComponent,
     NgForComponent,
     NgSwitchcaseComponent,
     NgStyleComponent,
-    NgClassComponent
+    NgClassComponent,
+    NgCustomComponent,
+    CambiarColorDirective
   ],
   imports: [
     BrowserModule

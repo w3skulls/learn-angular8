@@ -1,0 +1,22 @@
+<h2>Directivas personalizadas</h2>
+
+<br>
+
+
+<div class="container">
+    <h6>Seleccionar opción: </h6>
+    <div>
+        <input type="radio" name="colores" (click)="color='lightgreen'" value="Green" checked>green
+        <br>
+        <input type="radio" name="colores" (click)="color='yellow'" value="Yellow">Yellow
+        <br>
+        <input type="radio" name="colores" (click)="color='crimson'" value="Crimson">Crimson
+    </div>
+    <br>
+    <p>Valor seleccionado: <span>{{color}}</span></p>
+    <p [directivaCustom]="color" [ngStyle] = "{'backgroundColor': color}">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae laboriosam quas eum dolores sunt sapiente fugit, dolorem eveniet ea fugiat molestias aut, vero ipsum laudantium rem, natus quo cupiditate eius!</p>
+</div>
+
+
+
+

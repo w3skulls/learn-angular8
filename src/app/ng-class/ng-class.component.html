@@ -1,8 +1,20 @@
 <h2>Directiva: *ngClass</h2>
 <br>
-<button (click)="onChangeTextColor($ev)" class="btn btn-success" type="button">Añadir clase del párrafo</button>
+<button (click)="onChangeClass1($event)" class="btn btn-success" type="button">Añadir clase-1</button>
+<button (click)="onChangeClass2($event)" class="btn btn-success" type="button">Añadir clase-2</button>
+<button (click)="onChangeClass3($event)" class="btn btn-success" type="button">Añadir clase-3</button>
 
 <br>
-<br/>
-
-<p class="texto" [(ngModel)]="txtbinding">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<br />
+<div [ngClass]="{
+    'clase1': condClase1,
+    'clase2': condClase2,
+    'clase3': condClase3
+}">
+    <p class="texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+        it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+        typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+        including versions of Lorem Ipsum.</p>
+</div>

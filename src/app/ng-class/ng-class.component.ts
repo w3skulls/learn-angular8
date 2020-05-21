@@ -10,17 +10,23 @@ const TAG : string = "[NgClassComponent] ";
 })
 export class NgClassComponent implements OnInit {
 
+  condClase1 : boolean = false;
+  condClase2 : boolean = false;
+  condClase3 : boolean = false;
 
-  colors: any = ['rojo', 'verde', 'azul'];
 
   constructor() { }
 
+  onChangeClass1(ev){
+    this.condClase1 = true;
+  }
 
-  onChangeTextColor(ev){
-    let max = Math.floor(this.colors.length - 1);
-    let color = this.colors[Math.floor(Math.random() * (max + 1))];
-    console.log('color', color)
-    return 'texto-' +  color;
+  onChangeClass2(ev){
+    this.condClase2 = true;
+  }
+
+  onChangeClass3(ev){
+    this.condClase3 = true;
   }
 
   ngOnInit(): void {
