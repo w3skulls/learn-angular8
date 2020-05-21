@@ -9,6 +9,7 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgCustomComponent } from './ng-custom/ng-custom.component';
 import { CambiarColorDirective } from './directivas/cambiar-color.directive';
+import { SafeNavigationOperatorComponent } from './safe-navigation-operator/safe-navigation-operator.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { CambiarColorDirective } from './directivas/cambiar-color.directive';
     NgStyleComponent,
     NgClassComponent,
     NgCustomComponent,
-    CambiarColorDirective
+    CambiarColorDirective,
+    SafeNavigationOperatorComponent
+    
   ],
   imports: [
     BrowserModule
