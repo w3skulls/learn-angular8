@@ -1,0 +1,22 @@
+<h2>Directiva: *ngFor</h2>
+<br>
+<button (click)="onActualizar($event)" class="btn btn-success" type="button">Actualizar componente</button>
+<br>
+<br>
+<h5>Listado de cursos</h5>
+<ul>
+    <li *ngFor="let item of cursos">
+       
+        <div class="row" [id]="item.id">
+            <div class="col">
+                <p>{{ item.titulo }} | {{ item.duracion }} horas</p>
+            </div>
+            <div class="col">
+                <button (click)="onBorrar(item)" type="button" class="btn btn-warning">Eliminar</button>
+                <button (click)="onEditar(item)" type="button" class="btn btn-info">Editar</button>
+            </div>
+        </div>
+    </li>
+</ul>
+
+<p>*ngFor puede estar atento a los cambios que puedan tener los datos que iteramos</p>

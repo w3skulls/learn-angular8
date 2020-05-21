@@ -1,0 +1,21 @@
+<h2>Directiva: *ngStyle</h2>
+<p>ngStyle] permite dar estilos. </p>
+
+<div [ngStyle]="{'backgroundColor': 'yellow','color': 'red'}">
+    <p>Dando estilos en línea mediante un objeto</p>
+</div>
+
+<div [ngStyle]="{'backgroundColor': bgCrimson ? 'crimson' : 'purple'}">
+    <p>Dando estilso en línea atendiendo a una condición [true|false]. bgCrimson is {{bgCrimson}}</p>
+</div>
+
+<p>Podemos dar estilos atendiendo a propiedades mediante funciones que se desencadenan en el componente</p>
+<h5>Listado de cursos</h5>
+<ul>
+    <li *ngFor="let item of cursos">
+       
+        <div class="row" [id]="item.id">
+            <p [ngStyle] = "{'color': getColors(item.tematica)}">{{ item.titulo }} | {{ item.duracion }} horas</p>
+        </div>
+    </li>
+</ul>

@@ -1,0 +1,25 @@
+<h2>Directiva: *ngIf</h2>
+
+
+<h5>Booleans</h5>
+<div *ngIf = "isValid" ><p>isValid</p></div>
+<div *ngIf = "!isValid" ><p>!isValid</p></div>
+
+
+<h5>Length</h5>
+<div *ngIf="cursos.length" ><p>Tenemos un array de cursos</p></div>
+<div *ngIf="!cursos.length" ><p>No hay cursos que mostrar</p></div>
+
+
+<h5>Templates</h5>
+<p>cursos.length; then siHayCursos else noCursos</p>
+<p>Trabajamos con templates cuando tenemos muchos elementos</p>
+<div *ngIf="cursos.length; then siHayCursos else noHayCursos" ></div>
+<ng-template #siHayCursos><p>Tenemos cursos que mostrar [template]</p></ng-template>
+<ng-template #noHayCursos><p>No hay cursos que mostrar [template]</p></ng-template>
+
+
+<h5>Propiedad "hidden" [se encuentra en el DOM]</h5>
+<p>Trabajamos con templates cuando tenemos pocos elementos que tratar.</p>
+<div [hidden]="!cursos.length">Hay cursos que mostrar [prop.binding]</div>
+<div [hidden]="cursos.length">No hay cursos que mostrar [prop.binding]</div>
