@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+//@import "~bootstrap/dist/css";
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+
+body{
+    width: 80%;
+    margin: 3rem auto;
+}
+
+h2{ color: crimson; margin-top: 1.8rem;}
+h5{ color: cadetblue;}
+
+button{margin-right: 0.5rem;}
