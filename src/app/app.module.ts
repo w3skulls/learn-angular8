@@ -6,6 +6,10 @@ import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { NgSwitchcaseComponent } from './ng-switchcase/ng-switchcase.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
+import { NgClassComponent } from './ng-class/ng-class.component';
+import { NgCustomComponent } from './ng-custom/ng-custom.component';
+import { CambiarColorDirective } from './directivas/cambiar-color.directive';
+import { SafeNavigationOperatorComponent } from './safe-navigation-operator/safe-navigation-operator.component';
 
 import { BindingyeventosComponent } from './bindingyeventos/bindingyeventos.component';
 import { EventFilteringComponent } from './event-filtering/event-filtering.component';
@@ -21,11 +25,17 @@ import { DirectivasComponent } from './directivas/directivas.component'
 
 @NgModule({
   declarations: [
+    //Componentes, Directivas & Pipes.
     AppComponent,
     NgIfComponent,
     NgForComponent,
     NgSwitchcaseComponent,
-    NgStyleComponent
+    NgStyleComponent,
+    NgClassComponent,
+    NgCustomComponent,
+    CambiarColorDirective,
+    SafeNavigationOperatorComponent,
+    NgStyleComponent,
     BindingyeventosComponent,
     EventFilteringComponent,
     TwowaydatabindingComponent,
