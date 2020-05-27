@@ -20,7 +20,9 @@ import { DecoradorInputComponent } from './decorador-input/decorador-input.compo
 import { UsuarioComponent } from './usuario/usuario.component';
 import { UsuarioaliasComponent } from './usuarioalias/usuarioalias.component';
 import { DecoradorOutputComponent } from './decorador-output/decorador-output.component';
-import { DirectivasComponent } from './directivas/directivas.component'
+import { DirectivasComponent } from './directivas/directivas.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { ServiciosComponent } from './servicios/servicios.component'
 
 
 @NgModule({
@@ -43,7 +45,9 @@ import { DirectivasComponent } from './directivas/directivas.component'
     UsuarioComponent,
     UsuarioaliasComponent,
     DecoradorOutputComponent,
-    DirectivasComponent
+    DirectivasComponent,
+    PipesComponent,
+    ServiciosComponent
   ],
   imports: [
     BrowserModule,
