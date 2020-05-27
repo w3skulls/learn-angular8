@@ -1,0 +1,9 @@
+<h2>Servicio Post</h2>
+<div *ngFor="let post of posts"></div>
+
+<ul class="list-group">
+    <li *ngFor="let post of posts" class="list-group-item">
+        <h5>{{ post.title | uppercase }}</h5>
+        <p>{{post.body}}</p>
+    </li>
+</ul>
