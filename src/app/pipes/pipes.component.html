@@ -1,0 +1,13 @@
+<h2>Pipes</h2>
+<br>
+
+<p>Usando los pipes predeterminados de Angular: Productos</p>
+<ul>
+    <li *ngFor="let producto of productos">
+        <span>Producto: {{ producto.nombre | uppercase }}</span><br>
+        <span>Tamaño: {{producto.peso | currency:'EUR' }}</span> <br>
+        <span>Unidades: {{producto.cantidad | number:'1.0' }}</span>
+    </li>
+</ul>
+
+
