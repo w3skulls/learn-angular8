@@ -1,4 +1,4 @@
-import { UsuariosService } from './../services/usuarios.service';
+import { UsuariosService } from '../services/usuarios/usuarios.service';
 import { Component, OnInit } from '@angular/core';
 
 const TAG = '[ServiciosComponent] ';
