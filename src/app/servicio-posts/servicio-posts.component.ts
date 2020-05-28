@@ -1,9 +1,9 @@
-import { Post } from './../models/psot.model';
+import { Post } from '../models/post.model';
 import { PostService } from './../services/post/post.service';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
-const TAG = '[ServicioPostsComponent] ';
+const TAG = '[ServicioPostsComponent] Obaservable ';
 
 @Component({
   selector: 'app-servicio-posts',

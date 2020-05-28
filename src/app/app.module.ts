@@ -24,7 +24,8 @@ import { DecoradorOutputComponent } from './decorador-output/decorador-output.co
 import { DirectivasComponent } from './directivas/directivas.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { ServiciosComponent } from './servicios/servicios.component';
-import { ServicioPostsComponent } from './servicio-posts/servicio-posts.component'
+import { ServicioPostsComponent } from './servicio-posts/servicio-posts.component';
+import { ServicioUsersComponent } from './servicio-users/servicio-users.component'
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { ServicioPostsComponent } from './servicio-posts/servicio-posts.componen
     DirectivasComponent,
     PipesComponent,
     ServiciosComponent,
-    ServicioPostsComponent
+    ServicioPostsComponent,
+    ServicioUsersComponent
   ],
   imports: [
     BrowserModule,

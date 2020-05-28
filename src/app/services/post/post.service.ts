@@ -1,4 +1,4 @@
-import { Post } from './../../models/psot.model';
+import { Post } from '../../models/post.model';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -16,8 +16,4 @@ export class PostService {
   getPosts() : Observable<Post[]>{
     return this.http.get<Post[]>(this.url);
   }
-
-
-
-
 }
