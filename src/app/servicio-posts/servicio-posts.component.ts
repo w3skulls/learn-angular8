@@ -28,8 +28,5 @@ export class ServicioPostsComponent implements OnInit {
       //console.log(TAG + 'response', response);
       this.posts = response;
     })
-
-
   }
-
 }
